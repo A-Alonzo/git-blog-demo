@@ -1,0 +1,114 @@
+===================================================================================
+                           Aprendiendo Usar Git
+===================================================================================
+
+***Comando que se vieron en el curso de SWISE**
+
+git init
+echo "Hola, mundo" > liz.txt
+git status
+git add liz.txt
+
+git commit -m "recordad cuidado" (abrir una cuenta)
+
+git log
+cat liz.txt
+
+git checkout 'clave'
+git stash
+
+git log --all
+
+git log --all --graph --decorate (visualiza en forma de ramas)
+
+git stash drop
+git stash list
+
+git remote add origin 'enlace de github'
+
+- hacer cambios
+
+git remote
+git status
+git push origin master
+traer a la compu
+git add .
+git stash 
+xgit pull origin master 
+
+git branch
+
+git push -f origin master 
+
+git stash apply
+
+git clone  'link de github'
+
+-----------------------------------------------------------------------------------------------
+
+====================================================================================
+                       Basandome en los libros que encontre
+====================================================================================
+
+
+Git es un sistema de control de versiones.  
+Un sistema de control de versiones es una pieza de software diseñada para realizar un seguimiento de los cambios realizados en los archivos a lo largo del tiempo.  
+Más específicamente, Git es un sistema de control de versiones distribuido, lo que significa que todos los que trabajan con un proyecto en Git tienen una copia del historial completo del proyecto, no solo del estado actual de los archivos. 
+
+------------------------------------------------------------------------------------------------
+ 
+ ***SEGUN EL LIBRO PRO-GIT:***
+
+ * Creacion de un usuario de git:
+        $ git config --global user.name "John Doe"
+        $ git config --global user.email johndoe@example.com
+
+
+ * Si auncaso quiero usar un editor predeterminado:
+
+        $ git config --global core.editor emacs
+
+        NOTA: Puede ser otro editor, en el caso de deepin:
+            $ git config --global core.editor deepin-editor
+              En el caso de Ubuntu:
+            $ git config --global core.editor gedit
+
+ * Comprobando la configuracion antes hecha:
+        
+       $ git config --list
+
+
+ * Es posible comprobar el valor que git tiene para una clave en especifico:
+       $ git config <key>
+   Un ejemplo es el nombre de usuario que se ha establecido:
+       $ git config user.name
+
+ * Obteniendo ayuda en git:
+     Existen tres maneras de hacerlo:
+        1. $ git help <verb>
+        2. $ git <verb> --help
+        3. $ man git-<verb>
+     donde <verb> es el comando del cual se busca informacion de como se usa, por ejemplo:
+        $ git help config
+   
+    
+  **Fundamentos de git**
+
+  * Obteniendo un repositorio git:
+     Se puede obtener de dos maneras:
+        1. tomar un proyecto o directorioexistente e importarlo en Git.
+        2. clonar un repositorio existente en Git desde otroservidor.
+
+  * Inicializando un repositorio en un directorio existente:    
+    
+    Si se esta empezando a seguir un repositorio existente en Git, se usa el siguiente comando:
+        $ git init
+    
+
+
+
+
+
+
+
+
